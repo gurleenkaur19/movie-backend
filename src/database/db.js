@@ -19,8 +19,8 @@ if (process.env.DATABASE == "production") {
   config.username = process.env.DB_USERNAME_REMOTE;
   config.password = process.env.DB_PASSWORD_REMOTE;
   config.database = process.env.DB_NAME_REMOTE;
-  config.synchronize = process.env.SYNCHRONIZE === "true";
-  config.logging = process.env.DB_LOGGING === "true";
+  config.synchronize = process.env.SYNCHRONIZE_REMOTE === "true";
+  config.logging = process.env.DB_LOGGING_REMOTE === "true";
   config.ssl = {
     rejectUnauthorized: false,
   };
